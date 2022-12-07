@@ -227,14 +227,14 @@ class ActionsDropdown extends PureComponent {
         onClick: amIPresenter ? setMeetingLayout : setPushLayout,
       });
     }
-
+/*
     actions.push({
       icon: 'send',
       label: intl.formatMessage(intlMessages.layoutModal),
       key: 'layoutModal',
       onClick: () => mountModal(<LayoutModalContainer {...this.props} />),
     });
-
+*/
     return actions;
   }
 

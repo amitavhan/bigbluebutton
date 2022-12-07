@@ -55,4 +55,13 @@ const Chat = styled.div`
   }
 `;
 
-export default { Chat };
+const IFrame = styled.iframe`
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-style: none;
+`;
+//border-bottom: 1px solid ${colorGrayLightest};
+//padding-bottom: 5px;
+
+export default { Chat, IFrame };

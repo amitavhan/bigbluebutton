@@ -11,6 +11,7 @@ import { UsersContext } from '../components-data/users-context/context';
 import ChatLogger from '/imports/ui/components/chat/chat-logger/ChatLogger';
 import lockContextContainer from '/imports/ui/components/lock-viewers/context/container';
 import Chat from '/imports/ui/components/chat/component';
+import Styled from '/imports/ui/components/chat/styles';
 import ChatService from './service';
 import { layoutSelect, layoutDispatch } from '../layout/context';
 import { escapeHtml } from '/imports/utils/string-utils';
@@ -225,7 +226,7 @@ const ChatContainer = (props) => {
   );
 
   return (
-    <Chat {...{
+/*    <Chat {...{
       idChatOpen,
       isChatLocked,
       ...restProps,
@@ -246,6 +247,16 @@ const ChatContainer = (props) => {
     >
       {children}
     </Chat>
+*/
+    <Styled.IFrame
+      title="jodochat"
+      allow="geolocation"
+      src={`https://jodostaging.avhan.com:4443/meeting_chat_application/index.jsp?meetingid=${Auth.meetingID}&username=${Auth.fullname}`}
+      //aria-describedby="padEscapeHint"
+      //style={{
+      //  pointerEvents: isResizing ? 'none' : 'inherit',
+      //}}
+    />
   );
 };
 
