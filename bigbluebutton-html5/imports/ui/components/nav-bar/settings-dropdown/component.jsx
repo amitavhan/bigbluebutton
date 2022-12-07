@@ -220,7 +220,7 @@ class SettingsDropdown extends PureComponent {
     this.menuItems = [];
 
     this.getFullscreenItem(this.menuItems);
-
+/*
     this.menuItems.push(
       {
         key: 'list-item-settings',
@@ -239,7 +239,7 @@ class SettingsDropdown extends PureComponent {
         onClick: () => mountModal(<AboutContainer />),
       },
     );
-
+*/
     if (helpButton) {
       this.menuItems.push(
         {
@@ -281,7 +281,7 @@ class SettingsDropdown extends PureComponent {
         },
       );
     }
-
+/*
     this.menuItems.push(
       {
         key: 'list-item-shortcuts',
@@ -292,7 +292,7 @@ class SettingsDropdown extends PureComponent {
         divider: true,
       },
     );
-
+*/
     if (allowedToEndMeeting && isMeteorConnected) {
       this.menuItems.push(
         {
