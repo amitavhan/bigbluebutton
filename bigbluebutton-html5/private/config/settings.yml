@@ -258,7 +258,7 @@ public:
   externalVideoPlayer:
     enabled: true
   kurento:
-    wsUrl: wss://jmeet1.avhan.com/bbb-webrtc-sfu
+    wsUrl: wss://mybbb.avhan.com/bbb-webrtc-sfu
     # Valid for video-provider. Time (ms) before its WS connection times out
     # and tries to reconnect.
     wsConnectionTimeout: 4000
